@@ -1,4 +1,4 @@
-# Sistema Especialista para Recomendação de Trilha Acadêmica
+# RA1-Prolog-2025
 
 ## Informações do Projeto
 - **Instituição**: Pontifícia Universidade Catolica do Paraná
