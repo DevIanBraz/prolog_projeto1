@@ -9,8 +9,8 @@ calcula_pontuacao(Trilha, Pontuacao) :-
 
 % Verifica se o usuário respondeu positivamente para uma característica
 resposta_positiva(Caracteristica) :-
-    pergunta(_, _, Caracteristica),
-    resposta(Caracteristica, s).
+    pergunta(Numero, _, Caracteristica),
+    resposta(Numero, s).
 
 % Predicado para recomendar trilhas ordenadas por pontuação
 recomenda(TrilhasRecomendadas) :-
