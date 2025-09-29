@@ -15,8 +15,8 @@ teste_perfil_1 :-
     writeln('TESTE 1: Perfil de Ciência de Dados'),
     consult('perfil_teste_1.pl'),
     recomenda(Trilhas),
-    (   member(ciencia_dados, Trilhas),
-        writeln('✓ TESTE 1 APROVADO: Ciência de Dados recomendada corretamente')
+    (   member(ciencia_dados, Trilhas)
+    ->  writeln('✓ TESTE 1 APROVADO: Ciência de Dados recomendada corretamente')
     ;   writeln('✗ TESTE 1 FALHOU: Ciência de Dados não foi recomendada')
     ),
     unload_file('perfil_teste_1.pl').
@@ -26,8 +26,8 @@ teste_perfil_2 :-
     writeln('TESTE 2: Perfil de Desenvolvimento Web'),
     consult('perfil_teste_2.pl'),
     recomenda(Trilhas),
-    (   member(desenvolvimento_web, Trilhas),
-        writeln('✓ TESTE 2 APROVADO: Desenvolvimento Web recomendado corretamente')
+    (   member(desenvolvimento_web, Trilhas)
+    ->  writeln('✓ TESTE 2 APROVADO: Desenvolvimento Web recomendado corretamente')
     ;   writeln('✗ TESTE 2 FALHOU: Desenvolvimento Web não foi recomendado')
     ),
     unload_file('perfil_teste_2.pl').
@@ -37,8 +37,8 @@ teste_perfil_3 :-
     writeln('TESTE 3: Perfil de Segurança da Informação'),
     consult('perfil_teste_3.pl'),
     recomenda(Trilhas),
-    (   member(seguranca_informacao, Trilhas),
-        writeln('✓ TESTE 3 APROVADO: Segurança da Informação recomendada corretamente')
+    (   member(seguranca_informacao, Trilhas)
+    ->  writeln('✓ TESTE 3 APROVADO: Segurança da Informação recomendada corretamente')
     ;   writeln('✗ TESTE 3 FALHOU: Segurança da Informação não foi recomendada')
     ),
     unload_file('perfil_teste_3.pl').
