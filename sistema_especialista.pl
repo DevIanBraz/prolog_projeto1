@@ -1,6 +1,6 @@
 % SISTEMA ESPECIALISTA PARA RECOMENDAÇÃO DE TRILHA ACADÊMICA
-% Disciplina: Sistemas Especialistas
-% Desenvolvido por: [Nomes dos alunos]
+% Disciplina: Programação Logica e Funcional
+% Desenvolvido por: [Ian Carlo Araújo Braz]
 
 :- include('interface_usuario.pl').
 :- include('testes.pl').
