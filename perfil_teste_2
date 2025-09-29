@@ -1,0 +1,14 @@
+% Perfil: Aluno criativo com interesse em programação e design
+resposta(programacao, s).
+resposta(design_uiux, s).
+resposta(criatividade, s).
+resposta(trabalho_equipe, s).
+resposta(banco_dados, s).
+resposta(logica_programacao, s).
+resposta(matematica_estatistica, n).
+resposta(algoritmos_complexos, n).
+resposta(redes_computadores, n).
+resposta(etica_hacking, n).
+resposta(analise_riscos, n).
+resposta(infraestrutura_cloud, n).
+resposta(sistemas_operacionais, n).
