@@ -16,17 +16,17 @@ limpar_base_respostas :-
 
 % Faz todas as perguntas ao usuário
 faz_perguntas :-
-    pergunta(Numero, Pergunta, Caracteristica),
-    faz_pergunta(Numero, Pergunta, Caracteristica),
+    pergunta(Numero, Pergunta, _),
+    faz_pergunta(Numero, Pergunta),
     fail.
 faz_perguntas.
 
 % Faz uma pergunta individual
-faz_pergunta(Numero, Pergunta, Caracteristica) :-
+faz_pergunta(Numero, Pergunta) :-
     format('~w. ~w (s/n): ', [Numero, Pergunta]),
     read(Resposta),
     valida_resposta(Resposta),
-    assertz(resposta(Caracteristica, Resposta)),
+    assertz(resposta(Numero, Resposta)),
     nl.
 
 % Valida a resposta do usuário
